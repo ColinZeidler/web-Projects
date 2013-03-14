@@ -24,6 +24,23 @@
     top:5em;
     left:10%;
     width:80%;
+    overflow:hidden;
+}
+#post {
+    left: 2em;
+    position: relative;
+    background-color: #000;
+    color:#FFF;
+    border-radius: 15px 0px 0px 15px;
+    padding: 1em;
+    width: 60em;
+}
+#post .title {
+    font-size: 1.25em;
+    color: #FC0;
+}
+#post .content {
+    
 }
 
 body {
