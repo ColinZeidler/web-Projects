@@ -4,7 +4,7 @@ $host = 'localhost';
 $user = 'root';
 $db = 'website';
 
-$mcTable = 'minecraft';
+$mcTable = 'minecraftPosts';
 $userTable = 'users';
 
 ?>

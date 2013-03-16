@@ -1,6 +1,7 @@
 <?php
+require('../databaseinfo.php');
 // Create connection
-$con=mysqli_connect('localhost','root','Blossom1','website');
+$con=mysqli_connect($host,$user,$pass,$db);
 
 // Check connection
 if (mysqli_connect_errno($con))
@@ -8,7 +9,7 @@ if (mysqli_connect_errno($con))
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$result = mysqli_query($con, "SELECT * FROM minecraft");
+$result = mysqli_query($con, "SELECT * FROM $mcTable");
 
 while($row = mysqli_fetch_array($result)) {
     echo "<br />";
