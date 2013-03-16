@@ -11,9 +11,10 @@ if (mysqli_connect_errno($con))
 $result = mysqli_query($con, "SELECT * FROM minecraftPosts");
 
 while($row = mysqli_fetch_array($result)) {
+    echo "<br />";
     echo "<div id=post>";
 	echo "<span class=title>" . $row['title'] . "</span></br><span class=content>" . $row['content'] . "</span>";
-    echo "</div><br />";
+    echo "</div>";
 }
 
 msqli_close($con);
