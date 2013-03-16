@@ -1,6 +1,6 @@
 <?php
 // Create connection
-$con=mysqli_connect("localhost","root","<password>","website");
+$con=mysqli_connect('localhost','root','Blossom1','website');
 
 // Check connection
 if (mysqli_connect_errno($con))
@@ -8,7 +8,7 @@ if (mysqli_connect_errno($con))
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-$result = mysqli_query($con, "SELECT * FROM minecraftPosts");
+$result = mysqli_query($con, "SELECT * FROM minecraft");
 
 while($row = mysqli_fetch_array($result)) {
     echo "<br />";

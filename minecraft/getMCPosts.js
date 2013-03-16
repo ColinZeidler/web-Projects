@@ -5,6 +5,6 @@ window.onload=function() {
         document.getElementById("posts").innerHTML=xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET","mysqltest.php",true);
+    xmlhttp.open("GET","getPosts.php",true);
     xmlhttp.send();
 }
