@@ -1,5 +1,5 @@
 <?php
-$pass = 'Blossom1';
+$pass = '<password>';
 $host = 'localhost';
 $user = 'root';
 $db = 'website';
